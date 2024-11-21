@@ -4,8 +4,8 @@
 
 <template>
   <div class="hero-buttons">
-    <button type="button">Sign Up</button>
-    <button type="button">Sign In</button>
+    <button type="button">Register</button>
+    <button type="button">Login</button>
   </div>
 </template>
 
