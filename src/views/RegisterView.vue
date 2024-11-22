@@ -14,6 +14,7 @@
             <input type="text" placeholder="Last Name" class="input-field" required>
             <input type="email" placeholder="Email" class="input-field" required />
             <input v-model="password" type="password" placeholder="Password" class="input-field" required />
+            <input v-model="reEnterPassword" type="password" placeholder="Re-enter Password" class="input-field" required />
             <button type="submit" class="button login">Login</button>
         </form>
     </div>
