@@ -1,13 +1,13 @@
 <script setup>
 import Footer from '../components/Footer.vue'
 import Header from '../components/Header.vue'
-import Genres from '../components/Genres.vue';
+import Details from '../components/Details.vue';
 </script>
 
 <template>
     <div>
         <Header></Header>
-        <Genres></Genres>
+        <Details></Details>
         <Footer></Footer>
     </div>
 </template>
