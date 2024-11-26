@@ -1,16 +1,18 @@
 <script setup>
+import axios from "axios";
+import { useRouter } from "vue-router";
 
+const router = useRouter();
+const response = await axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=${import.meta.env.VITE_TMDB_KEY}`);
 </script>
 
 <template>
     <h3>Most Popular Movies</h3>
-
     <div class="movie-gallery">
-        <img src="/src/assets/Movie Images/joker.jpg" alt="Joker Movie Poster">
-        <img src="/src/assets/Movie Images/dune two.jpg" alt="Dune Part Two Movie Poster">
-        <img src="/src/assets/Movie Images/avatar.webp" alt="Avatar Movie Poster">
-        <img src="/src/assets/Movie Images/matrix.webp" alt="The Matrix Movie Poster">
-        <img src="/src/assets/Movie Images/the dark knight.jpg" alt="The Dark Knight Movie Poster">
+        <div v-for="movie in response.data.results" :key="movie.id" class="movie-card">
+            <img :src="`https://image.tmdb.org/t/p/w500${movie.poster_path}`" alt="Movie Poster" class="movie-poster" />
+            <p class="movie-title">{{ movie.title }}</p>
+        </div>
     </div>
 </template>
 
