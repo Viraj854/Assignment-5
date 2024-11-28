@@ -7,10 +7,10 @@ import Hero from '../components/Hero.vue'
 
 <template>
     <div>
-        <Header></Header>
-        <Hero></Hero>
-        <Feature></Feature>
-        <Footer></Footer>
+        <Header />
+        <Hero />
+        <Feature />
+        <Footer />
     </div>
 </template>
 

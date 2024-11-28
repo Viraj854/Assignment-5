@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="hero-buttons">
+  <div class="header-buttons">
     <RouterLink to="/register" class="button register">Register</RouterLink>
     <RouterLink to="/login" class="button login">Login</RouterLink>
     <h1>VFlix</h1>
@@ -17,7 +17,7 @@ h1 {
   color: #4073ad;
 }
 
-.hero-buttons {
+.header-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,10 +25,10 @@ h1 {
 }
 
 .button {
-  margin-right: 10px;   
+  margin-right: 10px;
 }
 
-.hero-buttons .button {
+.header-buttons .button {
   display: inline-block;
   background-color: #4073ad;
   color: #ffffff;
@@ -43,7 +43,7 @@ h1 {
   transition: background-color 0.3s;
 }
 
-.hero-buttons .button:hover {
+.header-buttons .button:hover {
   background-color: #305a8a;
 }
 </style>
