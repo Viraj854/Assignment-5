@@ -1,17 +1,13 @@
 <script setup>
-import Footer from '../components/Footer.vue'
-import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue';
+import Header from '../components/Header.vue';
 import Details from '../components/Genres.vue';
 </script>
 
 <template>
-    <div>
-        <Header />
-        <Details />
-        <Footer />
-    </div>
+    <Header />
+    <Details />
+    <Footer />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

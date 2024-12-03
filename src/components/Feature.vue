@@ -82,7 +82,7 @@ h3 {
     font-size: 16px;
     color: #333;
     padding: 10px;
-    background-color: #f4f4f4;
+    background-color: #d0e7f9;
     margin: 0;
 }
 

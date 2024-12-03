@@ -1,7 +1,7 @@
 <script setup>
-import Footer from '../components/Footer.vue'
-import Header from '../components/Header.vue'
-import Genres from '../components/Genres.vue'
+import Footer from '../components/Footer.vue';
+import Header from '../components/Header.vue';
+import Genres from '../components/Genres.vue';
 
 const genresList = [
   {
@@ -28,11 +28,9 @@ const genresList = [
 </script>
 
 <template>
-  <div>
-    <Header />
-    <Genres :genres="genresList" />
-    <Footer />
-  </div>
+  <Header />
+  <Genres :genres="genresList" />
+  <Footer />
 </template>
 
 <style scoped></style>
